@@ -1,16 +1,9 @@
-/*
- * [Modified] Modern CSS Reset
- * @link https://github.com/hankchizljaw/modern-css-reset
-*/
-
-/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margin */
 body,
 h1,
 h2,
@@ -19,7 +12,6 @@ h4 {
   margin: 0;
 }
 
-/* Set core body defaults */
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -29,13 +21,11 @@ body {
   font-family: sans-serif;
 }
 
-/* Make images easier to work with */
 img {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -43,7 +33,6 @@ select {
   font: inherit;
 }
 
-/* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -61,16 +50,23 @@ nav li {
   font-family: "Kulim Park", sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
 h1 {
-  font-size: 60px;
+  font-size: 3.75em;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 /* Header */
@@ -125,6 +121,7 @@ header p {
   animation: fadeIn 450ms ease-in 300ms forwards;
 }
 
+
 /* Main Content */
 main {
   color: #767676;
@@ -137,7 +134,7 @@ main {
   background-position: right center;
 }
 
-/* changes styles when the viewport is less than 800px */
+
 @media (max-width: 800px)  {
   #about .max-line-length {
     max-width: 50ch;
@@ -159,7 +156,6 @@ main {
   background-size: cover;
 }
 
-/* changes styles when the viewport is less than 767px */
 @media (max-width: 767px) {
    #tours .flexbox {
     flex-wrap: wrap;
@@ -174,6 +170,7 @@ main {
    }
 
 }
+
 /* Component: Nav */
 nav {
   background: rgba(251, 169, 195, 0.95);
@@ -263,11 +260,9 @@ button.button {
 }
 
 /* Component: Form */
-
 form {
   display: grid;
   grid-gap: 24px;
-  /* ch is roughly equal to the width of the zero character in the current font and font size */
   max-width: 60ch;
 }
 
@@ -331,7 +326,6 @@ label {
 }
 
 /* Utilities */
-
 .wrapper {
   max-width: 1024px;
   padding-left: 24px;
